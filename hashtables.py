@@ -36,9 +36,9 @@ def fill_hashtable(names: list) -> list:
 
 
 def main():
-    h = fill_hashtable(names)
+    hashtable = fill_hashtable(names)
     i = 0
-    for bucket in h:
+    for bucket in hashtable:
         print(f"{i}. {bucket}")
         i += 1
 
