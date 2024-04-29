@@ -19,7 +19,9 @@ def hashfunc(name: str) -> int:
         sum += abc[ch]
     return sum % len(name)
 
-names = ["John Smith", "Jane Smith", "Will Smith", "Kent Beck", "Rick Crow", "Dan Brown", "Adam Smith", "Ian Paice", "Ian Gillan"]
+names = ["Bill Ward", "Adrian Smith", "Glenn Hughes", "Ken Hensley", "Mick Box",
+         "John Bonham", "Robert Plant", "Ian Paice", "Ian Gillan", "Jimmy Page",
+         "David Byron", "Gary Thain", "Don Airey", "Dan Swano", "Ozzy Osbourne",]
 
 
 def fill_hashtable(names: list) -> list:
