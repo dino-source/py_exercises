@@ -1,3 +1,11 @@
+### Breadth-first search ###
+
+# Output will be as follows:
+# odissey.png
+# a.png
+# space.png
+
+
 from os import listdir
 from os.path import isfile, join
 from collections import deque
@@ -11,9 +19,7 @@ def printnames(start_dir):
         for file in sorted(listdir(dir)):
             fullpath = join(dir, file)
             if isfile(fullpath):
-                for _ in range(1, int(file[0])):
-                    print("\t", end='')
-                print(f"|__{file}")
+                print(file)
             else:
                 search_queue.append(fullpath)
                 
