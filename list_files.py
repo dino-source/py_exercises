@@ -1,5 +1,3 @@
-# Depth-first search
-
 from os import listdir
 from os.path import isfile, join
 from collections import deque
@@ -20,4 +18,4 @@ def printnames(start_dir):
                 search_queue.append(fullpath)
                 
 
-printnames("docs")
+printnames("pics")
