@@ -3,14 +3,14 @@ from collections import deque
 
 
 graph = {}
-graph["you"] = ["alice", "bob", "claire", ]
-graph["bob"] = ["anuj", "peggy", ]
-graph["alice"] = ["peggy", ]
-graph["claire"] = ["thom", "johnny", ]
-graph["anuj"] = []
-graph["peggy"] = []
-graph["thom"] = []
-graph["johnny"] = []
+graph["1_you"] = ["2_alice", "2_bob", "2_claire", ]
+graph["2_bob"] = ["3_anuj", "3_peggy", ]
+graph["2_alice"] = ["3_peggy", ]
+graph["2_claire"] = ["3_thom", "3_johnny", ]
+graph["3_anuj"] = []
+graph["3_peggy"] = []
+graph["3_thom"] = []
+graph["3_johnny"] = []
 
 
 def is_mango_seller(name: str) -> bool:
@@ -33,5 +33,5 @@ def bfs(name: str) -> bool:
                 searched.add(person)
     return False
 
-
-bfs("you")
+print(graph)
+bfs("1_you")
