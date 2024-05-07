@@ -14,9 +14,11 @@ graph['b'] = {}
 graph['b']['a'] = 8
 graph['b']['d'] = 7
 
+graph['c'] = {}
 graph['c']['d'] = 6
 graph['c']['fin'] = 3
 
+graph['d'] = {}
 graph['d']['fin'] = 1
 
 graph['fin'] = {}

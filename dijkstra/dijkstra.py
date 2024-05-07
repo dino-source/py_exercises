@@ -1,5 +1,5 @@
 from dijkstra_search import find_lowest_cost_node
-from globals_1 import costs, graph, parents, processed
+from globals_2 import costs, graph, parents, processed
 
 
 def main():
