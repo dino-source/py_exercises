@@ -1,5 +1,3 @@
-import copy
-
 def display(matrix: list[list[int]]) -> None:
     for row in matrix:
         for col in row:
@@ -8,13 +6,8 @@ def display(matrix: list[list[int]]) -> None:
     print()
 
 
-def create_matrix(row: int, col: int) -> list[list[int]]:
-    matrix = []
-    arr = []
-    for _ in range(row):
-        arr.append(0)
-    for _ in range(col):
-        matrix.append(copy.copy(arr))
+def create_matrix(rows: int, cols: int) -> list[list[int]]:
+    matrix = [[0 for _ in range(cols)] for _ in range(rows)]
     return matrix
 
 
