@@ -13,11 +13,25 @@ def create_matrix(rows: int, cols: int) -> list[list[int]]:
 
 def get_matrix(str_1: str, str_2: str) -> list[list[int]]:
     matrix = create_matrix(len(str_1), len(str_2))
-    for i in range(max(len(str_1), len(str_2))):
+    limit = min(len(str_1), len(str_2))
+    for i in range(limit):
         if str_1[i] == str_2[i]:
             matrix[i][i] = matrix[i-1][i-1] + 1
     return matrix
 
 
-matrix = get_matrix("dish", "fish")
-display(matrix)
+def main() -> None:
+    words_to_compare = {
+        "dish": "fish",
+        "fish": "vista",
+        "folk": "fort",
+        "fosh": "fish",
+    }
+
+    for k, v in words_to_compare.items():
+        print(f"{k}: {v}")
+        matrix = get_matrix(k, v)
+        display(matrix)
+
+
+main()
