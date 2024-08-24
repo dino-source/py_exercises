@@ -1,4 +1,8 @@
 # Exclude python venv directory
 .env
 
+# Ignore cache
 __pycache__
+
+# Ignore pictures
+pics
