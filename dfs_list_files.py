@@ -1,4 +1,4 @@
-### Depth-first search ###
+# Depth-first search #
 
 # Output will be as follows:
 # a.png

@@ -18,13 +18,5 @@ def main():
 
     print(f"The shortest path from start to fin is {costs['fin']}")
 
+
 main()
-
-
-
-
-
-
-
-
-

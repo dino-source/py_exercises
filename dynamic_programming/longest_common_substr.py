@@ -1,7 +1,7 @@
 def display(matrix: list[list[int]]) -> None:
     for row in matrix:
         for col in row:
-            print(col, end=' ')
+            print(col, end=" ")
         print()
     print()
 
@@ -16,7 +16,7 @@ def get_matrix(str_1: str, str_2: str) -> list[list[int]]:
     limit = min(len(str_1), len(str_2))
     for i in range(limit):
         if str_1[i] == str_2[i]:
-            matrix[i][i] = matrix[i-1][i-1] + 1
+            matrix[i][i] = matrix[i - 1][i - 1] + 1
     return matrix
 
 

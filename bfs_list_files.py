@@ -1,4 +1,4 @@
-### Breadth-first search ###
+# Breadth-first search #
 
 # Output will be as follows:
 # odissey.png
@@ -6,9 +6,9 @@
 # space.png
 
 
+from collections import deque
 from os import listdir
 from os.path import isfile, join
-from collections import deque
 
 
 def printnames(start_dir):
@@ -22,6 +22,6 @@ def printnames(start_dir):
                 print(file)
             else:
                 search_queue.append(fullpath)
-                
+
 
 printnames("pics")
